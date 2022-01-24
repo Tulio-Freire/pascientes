@@ -1,0 +1,29 @@
+#form-div{
+    width: 25vw;
+    min-width: 250px;
+    background-color: #3d88e9;
+    color: aliceblue;
+    border-radius: 8%;
+    border: solid 2px black;
+}
+
+#botao-cadastrar{
+    background-color: black;
+    border: solid 1px white;
+}
+
+#botao-cadastrar:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
