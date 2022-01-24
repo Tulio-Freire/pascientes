@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css\main.css">
+
+        <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery-3.6.0.min.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div id="form-div" class="container-sm text-center position-absolute top-50 start-50 translate-middle">
+            <h3>Cadastro de Pacientes</h1>
+            <form id="form-cadastro">
+                <!-- input nome -->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">NOME</label>
+                    <input type="text" id="nome" class="form-control">
+                    <div id="nome-invalido" class="invalid-feedback">
+                        Por favor preencha o nome do paciente.
+                    </div>
+                </div>
+                <!-- input cpf -->
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" id="cpf" class="form-control number" maxlength="11">
+                    <div id="cpf-invalido" class="invalid-feedback">
+                        Por favor preencha o cpf do paciente corretamente.
+                    </div>
+                </div>
+                <!-- select do UF-->
+                <div class="mb-3">
+                    <label for="uf" class="form-label">ESTADO</label>
+                    <select class="form-select" id="uf" required>
+                        <option selected>selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <div id="uf-invalido" class="invalid-feedback">
+                        Por favor selecione o estado do paciente.
+                    </div>
+                </div>
+                <button type="submit" id="botao-cadastrar" class="btn btn-primary">CADASTRAR</button>
+            </form>
+        </div>
+
+        <!-- modal de sucesso -->
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sucesso</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Cadastro realizado com sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                  <button id="modal-close" type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
